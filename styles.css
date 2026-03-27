@@ -80,3 +80,25 @@ div.menu-items {
   flex-direction: column;
   gap: 6px;
 }
+
+button.menu-btn {
+  width: 62%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 13px 28px;
+  background: var(--btn-bg);
+  border: 1px solid var(--panel-border);border-radius: 8px;
+  color: var(--text);
+  font-family: 'Cinzel', serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  transition: background 0.22s, border-color 0.22s, transform 0.15s, box-shadow 0.22s;
+  position: relative;
+  overflow: hidden;
+  animation: fadeUp 0.5s ease both;
+}
