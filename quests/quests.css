@@ -33,3 +33,29 @@ div.bg img {
   object-fit: cover;
   opacity: 0.75;
 }
+
+div.bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.65) 100%);
+}
+
+section.panel::before,
+section.panel::after {
+  content: '✦';
+  position: absolute;
+  color: var(--gold);
+  font-size: 1.1rem;
+  line-height: 1;
+  opacity: 0.8;
+}
+section.panel::before { top: 8px;    left: 12px; }
+section.panel::after  { bottom: 8px; right: 12px; }
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+}
+
