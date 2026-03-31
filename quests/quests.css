@@ -59,3 +59,34 @@ header {
   padding-bottom: 16px;
 }
 
+section.columns {
+  display: flex;
+  gap: 22px;
+}
+
+div.quest-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 210px;
+  flex-shrink: 0;
+}
+
+button.quest-btn {
+  width: 100%;
+  padding: 10px 18px;
+  background: var(--btn-bg);
+  border-top:    1px solid rgba(201,168,76,0.50);
+  border-left:   1px solid rgba(201,168,76,0.30);
+  border-right:  1px solid rgba(201,168,76,0.30);
+  border-bottom: 1px solid rgba(100, 70, 15, 0.80);
+  border-radius: 2px;
+  color: var(--parchment);
+  font-family: 'Crimson Text', serif;
+  font-size: 1.05rem;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.03em;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
