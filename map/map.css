@@ -99,3 +99,29 @@ button.map-btn {
   cursor: pointer;
   transition: background 0.2s, border-color 0.2s, transform 0.15s, letter-spacing 0.15s;
 }
+
+button.map-btn:hover {
+  background: var(--parchment);
+  border-color: var(--gold);
+  transform: scaleX(1.03);
+  letter-spacing: 0.05em;
+}
+
+button.map-btn.active {
+  background: var(--parchment);
+  border-color: var(--red);
+  border-width: 4px;
+  transform: none;
+}
+
+div.bottombar {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgba(20, 10, 0, 0.75);
+  border-top: 2px solid var(--gold);
+}
+ 
