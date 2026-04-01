@@ -90,3 +90,14 @@ button.quest-btn {
   transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
+button.quest-btn:hover {
+  background: rgba(100, 70, 15, 0.70);
+  color: var(--gold-light);
+}
+
+button.quest-btn.active {
+  background: var(--btn-active);
+  color: var(--gold-light);
+  border-color: var(--gold);
+  box-shadow: 0 0 8px var(--gold);
+}
