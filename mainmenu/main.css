@@ -116,4 +116,35 @@ button.menu-btn {
   position: relative;
   transition: background 0.2s, border-color 0.2s, color 0.15s, transform 0.15s;
 }
+
+div.btn-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: var(--yellow);
+  transition: width 0.25s ease;
+}
+
+button.menu-btn:hover {
+  background: var(--btn-hover);
+  border-left-color: var(--cyan);
+  color: var(--yellow);
+  transform: translateX(6px);
+}
+ 
+button.menu-btn:hover div.btn-line {
+  width: 100%;
+}
+ 
+button.menu-btn:active {
+  transform: translateX(3px) scale(0.98);
+}
+ 
+button.menu-btn.active {
+  background: rgba(252, 238, 10, 0.12);
+  border-left-color: var(--cyan);
+  color: var(--yellow);
+}
  
