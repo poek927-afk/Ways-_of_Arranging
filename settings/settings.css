@@ -135,5 +135,12 @@ button.menu-btn:hover {
  
 button.menu-btn:active {
   transform: scale(0.97);
+  box-shadow: none;
 }
  
+button.menu-btn.active {
+  background: rgba(110, 65, 10, 0.90);
+  color: var(--text-bright);
+  border-color: var(--copper-light);
+  box-shadow: 0 0 16px rgba(184, 115, 51, 0.55);
+}
