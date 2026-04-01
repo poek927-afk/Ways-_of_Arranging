@@ -63,3 +63,39 @@ header.topbar div.save-point {
   gap: 4px;
   cursor: pointer;
 }
+
+header.topbar div.save-point img {
+  width: 44px;
+  height: 44px;
+}
+ 
+header.topbar div.save-label {
+  font-family: 'Rye', serif;
+  font-size: 0.65rem;
+  color: var(--gold);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+section.map-options {
+  position: relative;
+  z-index: 10;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+ 
+button.map-btn {
+  width: 500px;
+  padding: 22px 0;
+  background: var(--panel-bg);
+  border: 3px solid var(--parchment);
+  color: var(--ink);
+  font-family: 'Rye', serif;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, transform 0.15s, letter-spacing 0.15s;
+}
