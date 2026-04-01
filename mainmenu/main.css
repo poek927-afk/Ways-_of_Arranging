@@ -46,3 +46,47 @@ div.scanlines {
   );
   pointer-events: none;
 }
+
+section.panel {
+  position: relative;
+  z-index: 10;
+  width: min(560px, 90vw);
+  background: var(--panel-bg);
+  /* Yellow left accent bar + cyan right */
+  border-left:   4px solid var(--yellow);
+  border-right:  1px solid var(--cyan);
+  border-top:    1px solid var(--cyan);
+  border-bottom: 1px solid var(--cyan);
+  padding: 32px 36px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  /* Glitchy neon glow */
+  box-shadow: -4px 0 20px rgba(252, 238, 10, 0.35),
+               4px 0 20px rgba(0, 240, 255, 0.15);
+}
+
+header {
+  border-bottom: 1px solid rgba(252, 238, 10, 0.30);
+  padding-bottom: 16px;
+}
+ 
+header div.logo-text {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--yellow);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px rgba(252, 238, 10, 0.70),
+               0 0 40px rgba(252, 238, 10, 0.30);
+}
+
+header div.subtitle-text {
+  font-size: 0.8rem;
+  color: var(--cyan);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  margin-top: 4px;
+  opacity: 0.75;
+}
