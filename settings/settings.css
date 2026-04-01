@@ -67,11 +67,26 @@ section.panel::before {
   pointer-events: none;
 }
 
+section.panel::after {
+  content: '⬤  ⬤';
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 0.45rem;
+  letter-spacing: 580px;
+  color: var(--copper-light);
+  pointer-events: none;
+}
+ 
+
 header {
   width: 100%;
   text-align: center;
   padding-bottom: 16px;
-  border-bottom: 1px solid var(--copper);
+  border-bottom: 3px double var(--copper);
+  position: relative;
 }
  
 header div.title-text {
@@ -79,9 +94,13 @@ header div.title-text {
   font-size: 3rem;
   font-weight: 700;
   color: var(--text);
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
+  text-shadow: 0 0 18px rgba(184, 115, 51, 0.55);
 }
  
+header div.title-text::before { content: '⚙  '; color: var(--copper); font-size: 1.8rem; }
+header div.title-text::after  { content: '  ⚙'; color: var(--copper); font-size: 1.8rem; }
+
 div.menu-list {
   width: 100%;
   display: flex;
@@ -91,23 +110,27 @@ div.menu-list {
 }
 
 button.menu-btn {
-  width: 55%;
+  width: 58%;
   padding: 12px 0;
   background: var(--btn-bg);
-  border: 1px solid var(--copper);
-  border-radius: 6px;
+  border-top:    1px solid var(--copper-light);
+  border-left:   1px solid var(--copper);
+  border-right:  1px solid var(--copper);
+  border-bottom: 2px solid var(--copper-dark);
+  border-radius: 3px;
   color: var(--text);
   font-family: 'Cinzel', serif;
   font-size: 1.1rem;
   letter-spacing: 0.05em;
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, transform 0.15s;
+  transition: background 0.2s, color 0.2s, transform 0.15s, box-shadow 0.2s;
 }
  
 button.menu-btn:hover {
   background: var(--btn-hover);
-  color: #f5dda0;
+  color: var(--text-bright);
   transform: scaleX(1.05);
+   box-shadow: 0 0 12px rgba(184, 115, 51, 0.45);
 }
  
 button.menu-btn:active {
