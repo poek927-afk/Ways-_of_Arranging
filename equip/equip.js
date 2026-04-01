@@ -28,3 +28,13 @@ slotButtons.forEach(slot => {
     itemButtons.forEach(b => b.classList.remove('selected'));
     btn.classList.add('selected');
  
+    if (selectedSlot) {
+      const emoji = btn.textContent.trim().split(' ')[0];
+      selectedSlot.textContent = emoji;
+      infoText.textContent = `Equipped ${name}!`;
+    } else {
+      infoText.textContent = items[name];
+    }
+  });
+});
+ 
