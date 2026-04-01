@@ -66,3 +66,28 @@ div.menu-list {
   align-items: center;
   gap: 8px;
 }
+
+button.menu-btn {
+  width: 55%;
+  padding: 12px 0;
+  background: var(--btn-bg);
+  border: 1px solid var(--copper);
+  border-radius: 6px;
+  color: var(--text);
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+ 
+button.menu-btn:hover {
+  background: var(--btn-hover);
+  color: #f5dda0;
+  transform: scaleX(1.05);
+}
+ 
+button.menu-btn:active {
+  transform: scale(0.97);
+}
+ 
