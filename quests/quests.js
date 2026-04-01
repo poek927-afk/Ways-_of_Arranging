@@ -16,3 +16,10 @@ buttons.forEach(btn => {
 
     buttons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+
+    const name = btn.textContent.trim();
+    detailTitle.textContent = name;
+    detailBody.textContent  = quests[name];
+ 
+  });
+});
