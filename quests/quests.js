@@ -14,12 +14,13 @@ const detailBody  = document.querySelector('div.detail-body');
 buttons.forEach(btn => {
   btn.addEventListener('click', () => {
 
-    buttons.forEach(b => b.classList.remove('active'));
+     buttons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-
+ 
     const name = btn.textContent.trim();
     detailTitle.textContent = name;
     detailBody.textContent  = quests[name];
  
   });
 });
+ 
