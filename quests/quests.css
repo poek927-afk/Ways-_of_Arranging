@@ -101,3 +101,19 @@ button.quest-btn.active {
   border-color: var(--gold);
   box-shadow: 0 0 8px var(--gold);
 }
+
+div.quest-detail div.detail-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--gold-light);
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gold-dark);
+}
+
+div.quest-detail div.detail-body {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: #d8ccb0;
+}
