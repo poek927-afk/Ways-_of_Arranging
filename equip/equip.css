@@ -52,3 +52,43 @@ section.columns {
   display: flex;
   gap: 32px;
 }
+
+div.equipped-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+div.backpack-side {
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+header {
+  text-align: center;
+  border-bottom: 3px solid var(--yellow);
+  padding-bottom: 10px;
+}
+ 
+header div.title-text {
+  font-size: 0.9rem;
+  color: var(--yellow);
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 0 #000;
+}
+
+div.slot-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+ 
+div.slot-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
