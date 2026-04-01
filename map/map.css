@@ -124,4 +124,29 @@ div.bottombar {
   background: rgba(20, 10, 0, 0.75);
   border-top: 2px solid var(--gold);
 }
+
+button.nav-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  color: var(--parchment);
+  font-family: 'Rye', serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.2s, transform 0.15s;
+}
+ 
+button.nav-btn:hover {
+  color: var(--gold);
+  transform: scale(1.08);
+}
+ 
+button.nav-btn img {
+  width: 36px;
+  height: 36px;
+}
  
