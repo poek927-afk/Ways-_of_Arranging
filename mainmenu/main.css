@@ -52,7 +52,7 @@ section.panel {
   z-index: 10;
   width: min(560px, 90vw);
   background: var(--panel-bg);
-  /* Yellow left accent bar + cyan right */
+ 
   border-left:   4px solid var(--yellow);
   border-right:  1px solid var(--cyan);
   border-top:    1px solid var(--cyan);
@@ -61,7 +61,7 @@ section.panel {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  /* Glitchy neon glow */
+  
   box-shadow: -4px 0 20px rgba(252, 238, 10, 0.35),
                4px 0 20px rgba(0, 240, 255, 0.15);
 }
