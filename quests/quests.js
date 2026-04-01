@@ -7,3 +7,12 @@ const quests = {
   "The Missing Horse":  "A merchant's prized horse has gone missing near Hollow Creek. Find the horse and return it safely for a reward."
 };
 
+const buttons     = document.querySelectorAll('button.quest-btn');
+const detailTitle = document.querySelector('div.detail-title');
+const detailBody  = document.querySelector('div.detail-body');
+
+buttons.forEach(btn => {
+  btn.addEventListener('click', () => {
+
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
