@@ -129,3 +129,24 @@ button.slot:not(.empty):hover {
   transform: scale(1.12);
   border-color: var(--yellow);
 }
+
+div.backpack-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button.item-btn {
+  width: 100%;
+  padding: 12px 14px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 3px solid var(--white);
+  border-radius: 4px;
+  color: var(--text);
+  font-family: 'Press Start 2P', monospace;
+  font-size: 0.6rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+ 
