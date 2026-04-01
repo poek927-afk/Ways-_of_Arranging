@@ -13,4 +13,9 @@ const settings = {
  
     menuButtons.forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
+
+    const name = btn.textContent.trim();
+    console.log(`Opened: ${name} — ${settings[name]}`);
  
+  });
+});
