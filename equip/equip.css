@@ -92,3 +92,40 @@ div.slot-row {
   align-items: center;
   gap: 10px;
 }
+
+div.slot-row.center {
+  justify-content: center;
+}
+
+div.body-icon {
+  font-size: 2.8rem;
+  width: 70px;
+  text-align: center;
+}
+
+button.slot {
+  width: 64px;
+  height: 64px;
+  background: var(--slot-bg);
+  border: 3px solid var(--white);
+  border-radius: 4px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
+}
+
+button.slot.empty {
+  opacity: 0.3;
+  cursor: default;
+}
+ 
+button.slot.active {
+  border-color: var(--slot-active);
+  background: rgba(4, 156, 216, 0.35);
+  box-shadow: 0 0 0 3px var(--slot-active);
+}
+ 
+button.slot:not(.empty):hover {
+  transform: scale(1.12);
+  border-color: var(--yellow);
+}
