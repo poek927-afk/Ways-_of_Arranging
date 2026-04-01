@@ -150,3 +150,26 @@ button.item-btn {
   transition: background 0.15s, border-color 0.15s, transform 0.1s;
 }
  
+button.item-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: var(--yellow);
+  transform: translateX(4px);
+}
+ 
+button.item-btn.selected {
+  border-color: var(--slot-active);
+  background: rgba(4, 156, 216, 0.30);
+}
+
+div.info-bar {
+  border-top: 3px solid var(--yellow);
+  padding-top: 10px;
+  text-align: center;
+}
+ 
+div.info-text {
+  font-size: 0.55rem;
+  color: var(--yellow);
+  letter-spacing: 0.04em;
+  text-shadow: 1px 1px 0 #000;
+}
