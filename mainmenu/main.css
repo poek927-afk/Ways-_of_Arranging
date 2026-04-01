@@ -148,3 +148,22 @@ button.menu-btn.active {
   color: var(--yellow);
 }
  
+button.menu-btn img.btn-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 4px rgba(252, 238, 10, 0.6));
+}
+
+div.footer {
+  border-top: 1px solid rgba(0, 240, 255, 0.25);
+  padding-top: 10px;
+}
+
+div.footer-text {
+  font-size: 0.65rem;
+  color: var(--cyan);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.6;
+}
